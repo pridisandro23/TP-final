@@ -1,0 +1,18 @@
+.message {
+    background-color:#ffffff;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border-radius: 20px;
+    max-width: 60%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+.message.own {
+    background-color:  #d9fdd3;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    }
