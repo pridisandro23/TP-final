@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import NewMessageForm from './NewMessageForm'
 import { useParams } from "react-router-dom";
 import MessageList from "./MessageList";
-import initialMessages from "./initialMessages";
+import initialMessages from "./InitialMessages";
 import { addNewMessage , deleteMessageById} from "./functionChat";
 import './ChatScreen.css'
 
