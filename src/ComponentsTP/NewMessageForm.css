@@ -1,43 +1,53 @@
+
+
 .new-message-form {
     display: flex;
     flex-direction: row;
-    padding: 10px 15px;
-    border-top: 1px solid #ddd;
-    background-color: white;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f2f5;
     position: sticky;
     bottom: 0;
-    left: 0;
-    right: 0;
-    align-items: center;
     z-index: 10;
+    width: 100%;
+    box-sizing: border-box; 
 }
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    flex-grow: 1;
+    margin: 0 10px;
+    }
 
 .new-message-input {
-    flex-grow: 1;
     border: none;
     outline: none;
-    padding: 10px 15px;
-    border-radius: 10px;
-    background-color: #f0f0f0;
+    padding: 8px;
     font-size: 16px;
-    margin-right: 10px;
+    flex-grow: 1;
+    background-color: transparent;
 }
 
-.send-button {
-    background-color: #717673c2;
+.send-button,
+.icon-button,
+.emoji-button {
+    background: none;
     border: none;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 10px;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
+    color: #555;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
 }
 
-.send-button:hover {
-    background-color: #1ebe57;
-}
+.send-button {
+    background-color: #f0f2f5;
+    color: #64737c;
+    padding: 10px;
+    }
