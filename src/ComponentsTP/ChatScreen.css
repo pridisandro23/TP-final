@@ -1,13 +1,17 @@
+
 .chat-screen {
-    height: 100vh;
-    background-color: rgb(46, 38, 38);
-    background-image: url('/imagenwp.png');
-    background-size: contain; 
-    background-repeat: repeat;
-    background-position: center;
-    padding: 0px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
+    background-color: #7acba5; 
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    overflow: hidden;
+}
+
+.chat-MessageList {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    padding: 20px;
+    overflow-y: auto;
 }

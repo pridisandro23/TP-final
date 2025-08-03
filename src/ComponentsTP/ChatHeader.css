@@ -1,0 +1,69 @@
+
+.chat-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 16px;
+    background-color: #f0f2f5; 
+    border-bottom: 1px solid #e2e2e2;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+.contact-info-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatar-header {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.contact-details-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name-header {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111b21;
+    margin: 0;
+}
+
+.last-connection-header {
+    font-size: 13px;
+    color: #667781;
+    margin: 0;
+}
+
+.chat-header-actions {
+    color: #54656f;
+    font-size: 20px;
+    display: flex;
+    gap: 24px;
+}
+
+.chat-header-actions i {
+    cursor: pointer;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #64737c;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+}

@@ -4,10 +4,12 @@ import "./Message.css"
 const Message = ({ id, emisor, text, time, onDelete }) => {
     return (
         <div className={emisor === 'YO' ? "message own" : "message"}>
-        {emisor !== 'YO' && <h4>{emisor}</h4>}
+        
         <p>{text}</p>
         <span className="message-time">{time}</span>
-        <button className="delete-button" onClick={() => onDelete(id)}> <i className="bi bi-trash"></i></button>
+        <button className="delete-button" onClick={() => onDelete(id)}>
+            <i className="bi bi-trash"></i>
+        </button>
         </div>
     );
 };

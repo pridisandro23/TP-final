@@ -7,12 +7,12 @@ const ContactList = ({ contacts }) => {
             {contacts.map((contact) => {
             return(
                 <Contact 
-                key={contact.id}
-                id={contact.id}
-                name={contact.name}
-                avatar={contact.avatar}
-                lastConnection={contact.lastConnection}
-                connectionStatus={contact.connectionStatus}
+                    key={contact.id}
+                    id={contact.id}
+                    name={contact.name}
+                    avatar={contact.avatar}
+                    lastConnection={contact.lastConnection}
+                    connectionStatus={contact.connectionStatus}
             />)}
             )
             }

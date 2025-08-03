@@ -6,7 +6,7 @@ export function addNewMessage (messageList, newText, contactId) {
         id: messageList.length + 1,
         contactId: Number(contactId),
         emisor: 'YO',
-        time: '11:10',  // más adelante lo hacemos 
+        time: '11:10',  // mas adelante lo hacemos 
         text: newText,
         status: 'no-visto',
     };
@@ -14,11 +14,12 @@ export function addNewMessage (messageList, newText, contactId) {
 return [...messageList, newMessage];}
 
 export const deleteMessageById = (messageList, messageId) => {
-const newMessageList = [];
+        const newMessageList = [];
 
 for (const message of messageList) {
-    if (message.id !== messageId) {
-    newMessageList.push(message);
+    if (message.id !== messageId) 
+        {newMessageList.push(message);
+
     }
 }
 return newMessageList;

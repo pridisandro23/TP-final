@@ -1,17 +1,17 @@
 import React from "react";
 import Message from "./Message"
 
-const MessageList = ({ messages, onDelete }) => {
+const MessageList = ({ className, messages, onDelete }) => {
     return (
-        <div>
+    <div className={className}> 
             {messages.map ((message) => (
                 <Message
-                key={message.id}
-                id={message.id}
-                emisor= {message.emisor}
-                text= {message.text}
-                time= {message.time}
-                onDelete={onDelete}
+                    key={message.id}
+                    id={message.id}
+                    emisor= {message.emisor}
+                    text= {message.text}
+                    time= {message.time}
+                    onDelete={onDelete}
                 ></Message>
             )
             )}
