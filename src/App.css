@@ -31,26 +31,41 @@ html, body, #root {
     width: 75%;
     height: 100vh;
     overflow-y: auto;
+    display: flex; 
+    flex-direction: column; 
+    overflow-y: hidden;
 }
+
 
 
 
 
 @media (max-width: 768px) {
     .app-container {
+        display: flex;
+        flex-direction: column; 
+        height: 100vh;
+        width: 100vw;
+        overflow-y: auto; 
+        position: relative;
     }
     
-    .chats-container {
-        width: 100%;
+    .chats-container,
+    .messages-area {
+        width: 100%; 
         min-width: unset;
+
+        flex-shrink: 0;
+    }
+
+    .chats-container {
+        height: auto; 
     }
 
     .messages-area {
-        width: 100%;
-        height: 100vh;
-        position: absolute; 
-        top: 0;
-        left: 0;
-        z-index: 10;
+        height: 100%; 
+        display: flex; 
+        flex-direction: column; 
+        overflow-y: hidden;
     }
 }
